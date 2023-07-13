@@ -1,25 +1,20 @@
-/**
- * Gets all objects from the `todos` object store.
- * 
- * @param db An IndexedDB database that was previously opened
- * @returns a Promise that resolves to an array containing the objects from the store
- */
-function getAllUsers(db) {
-  return new Promise((resolve, reject) => {
-    // A read-only transaction will be sufficient here since you're
-    // only reading data, not writing it.
-    const transaction = db.transaction(['todos'], 'readonly');
-    const store = transaction.objectStore('todos');
+// A read-only transaction will be sufficient here since you're
+// only reading data, not writing it.
+const transaction = db.transaction(['todos'], 'readonly');
+const store = transaction.objectStore('todos');
 
-    // Request all todo objects in this store.
-    const request = store.getAll();
+// Request all todo objects in this store.
+const request = store.getAll();
 
-    // When the data is ready, resolve the `Promise` with the query result.
-    request.addEventListener('success', (event) =>
-      resolve(event.target.result)
-    );
+// The request emits the `success` event when the data is ready.
+// The todos are in the request's `result` property, stored as an array.
+request.addEventListener('success', () => {
+  // The data has been loaded
+  console.log('Got todos:', request.result);
+});
 
-    // Handle any errors that may have occurred.
-    request.addEventListener('error', reject);
-  });
-}
+// If the `error` event is emitted, `request.error` is the actual
+// error object.
+request.addEventListener('error', () => {
+  console.error('Error querying database:', request.error);
+});
