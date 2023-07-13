@@ -1,3 +1,4 @@
+// Assuming a function called getUsers that returns a Promise
 getUsers()
   .then(
     // This function is called when the user list has been loaded.
