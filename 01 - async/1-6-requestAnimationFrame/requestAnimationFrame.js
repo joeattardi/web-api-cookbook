@@ -1,3 +1,11 @@
+/**
+ * Example 1-8. Fade-out animation using requestAnimationFrame
+ * From "Web Browser API Cookbook" by Joe Attardi
+ * 
+ * Animates an element's opacity with the requestAnimationFrame
+ * function.
+ */
+
 const animationSeconds = 2; // Animate over 2 seconds
 const fps = 60; // A nice smooth animation
 

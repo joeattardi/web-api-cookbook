@@ -1,3 +1,16 @@
+/**
+ * Example 1-4. Using a Promise chain
+ * From "Web Browser API Cookbook" by Joe Attardi
+ * 
+ * Assumes there are getUser and getPosts functions that
+ * return Promises.
+ */
+
+/**
+ * Loads the post titles for a given user ID.
+ * @param userId the ID of the user whose posts you want to load
+ * @returns a Promise that resolves to an array of post titles
+ */
 function getPostTitles(userId) {
   return getUser(userId)
     // Callback is called with the loaded user object

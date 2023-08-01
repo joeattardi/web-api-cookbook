@@ -1,7 +1,14 @@
+/**
+ * Example 1-7. Using Promise.allSettled
+ * From "Web Browser API Cookbook" by Joe Attardi
+ * 
+ * Assumes there is a getUser function that returns a Promise.
+ */
+
 Promise.allSettled([
-  loadUser(1),
-  loadUser(2),
-  loadUser(3)
+  getUser(1),
+  getUser(2),
+  getUser(3)
 ]).then(results => {
   results.forEach(result => {
     if (result.status === 'fulfilled') {

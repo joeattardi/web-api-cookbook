@@ -1,4 +1,11 @@
 /**
+ * Example 1-8. Promisifying the XMLHttpRequest API
+ * From "Web Browser API Cookbook" by Joe Attardi
+ * 
+ * Wraps the event-based XMLHttpRequest API in a Promise.
+ */
+
+/**
  * Sends a GET request to the specified URL. Returns a Promise that will resolve to the
  * JSON body parsed as an object, or will reject if there is an error or the response is not
  * valid JSON.

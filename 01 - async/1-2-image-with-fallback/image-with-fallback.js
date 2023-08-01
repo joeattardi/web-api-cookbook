@@ -1,3 +1,16 @@
+/**
+ * Example 1-2. Loading an image with a fallback
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+/**
+ * Loads an image. If there's an error loading the image, uses a fallback
+ * image URL instead.
+ *
+ * @param url The image URL to load
+ * @param fallbackUrl The fallback image to load if there's an error
+ * @returns a Promise that resolves to an Image element to insert into the DOM
+ */
 function loadImage(url, fallbackUrl) {
   return new Promise((resolve, reject) => {
     const image = new Image();

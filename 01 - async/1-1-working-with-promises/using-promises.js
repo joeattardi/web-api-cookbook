@@ -1,3 +1,8 @@
+/**
+ * Example 1-1. Using a Promise based API
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 // Assuming a function called getUsers that returns a Promise
 getUsers()
   .then(

@@ -1,3 +1,10 @@
+/**
+ * Example 1-6. Loading multiple users with Promise.all
+ * From "Web Browser API Cookbook" by Joe Attardi
+ * 
+ * Assumes there is a getUser function that returns a Promise.
+ */
+
 // Loading three users at once
 Promise.all([
   getUser(1),
