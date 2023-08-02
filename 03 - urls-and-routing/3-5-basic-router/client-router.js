@@ -1,3 +1,8 @@
+/**
+ * Example 3-13. A simple client-side router
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 // Route definitions. Each route has a path and some content to render.
 const routes = [
   { path: '/', content: '<h1>Home</h1>' },
@@ -16,11 +21,3 @@ function navigate(path, pushState = true) {
     history.pushState({}, '', path);
   }
 }
-
-document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', event => {
-    // Prevent the browser from trying to load the new URL from the server!
-    event.preventDefault();
-    navigate(link.getAttribute('href'));
-  });
-});

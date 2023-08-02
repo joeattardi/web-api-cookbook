@@ -1,3 +1,8 @@
+/**
+ * Example 3-16. Testing URLs against a pattern
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 const profilePattern = new URLPattern({ pathname: '/api/users/:userId/profile' });
 
 // The pattern won't match a pathname alone; it must be a valid URL
@@ -11,8 +16,3 @@ console.log(profilePattern.test(new URL('https://example.com/api/users/123/profi
 
 // The pathname must match exactly, so this won't match. 
 console.log(profilePattern.test('https://example.com/v1/api/users/123/profile')); // false
-
-const wildcardProfilePattern = new URLPattern({ pathname: '/*/api/users/:userId/profile' });
-
-// This matches now because the /v1 portion of the URL matches the wildcard
-console.log(wildcardProfilePattern.test('https://example.com/v1/api/users/123/profile')); // true

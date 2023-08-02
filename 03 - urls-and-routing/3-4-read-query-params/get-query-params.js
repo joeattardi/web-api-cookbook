@@ -1,5 +1,13 @@
 /**
+ * Example 3-11. Reading query parameters
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+/**
  * Takes a URL and returns an array of its query parameters.
+ * 
+ * @param inputUrl A URL string
+ * @returns An array of objects with key and value properties
  */
 function getQueryParameters(inputUrl) {
   // Can't use an object here because there may be multiple
