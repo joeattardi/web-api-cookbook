@@ -1,3 +1,8 @@
+/**
+ * Example 2-8. The reviver function
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 function reviver(key, value) {
   // JSON.parse calls the reviver once for each key/value pair. Watch for the `due` key.
   // Only proceed if there's actually a value for `due`.

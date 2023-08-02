@@ -1,3 +1,8 @@
+/**
+ * Example 2-6. The replacer function
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 function replacer(key, value) {
   if (key === '') {
     // first replacer call, `value` is the object itself.

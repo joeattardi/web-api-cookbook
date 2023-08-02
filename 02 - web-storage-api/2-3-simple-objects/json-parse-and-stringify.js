@@ -1,21 +1,23 @@
-// Constant indicating the key within local storage that the todo list
-// is saved under.
-const storageKey = 'todos';
-
-// Array containing the todo items.
-let todoList = loadTodoList();
+/**
+ * Example 2-3. Using JSON.parse and JSON.stringify
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
 
 /**
- * Loads the todo list from local storage.
- * @returns the previously saved list, or an empty array if there was no saved list.
+ * Given a user profile object, serialize it to JSON and store it in local storage.
+ * @param userProfile the profile object to save
  */
-function loadTodoList() {
-  return JSON.parse(localStorage.getItem(storageKey)) || [];
+function saveProfile(userProfile) {
+  localStorage.setItem('userProfile', JSON.stringify(userProfile));
 }
 
 /**
- * Takes the curent todo list and saves it to local storage.
+ * Loads the user profile from local storage, and deserializes the JSON back to
+ * an object. If there is no stored profile, an empty object is returned.
+ * @returns the stored user profile, or an empty object
  */
-function saveTodoList() {
-  localStorage.setItem(storageKey, JSON.stringify(todoList));
+function loadProfile() {
+  // If there is no stored `userProfile` value, this will return `null`. In this case,
+  // use the default value of an empty object.
+  return JSON.parse(localStorage.getItem('userProfile')) || {};
 }

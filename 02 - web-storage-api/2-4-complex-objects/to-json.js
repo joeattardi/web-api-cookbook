@@ -1,16 +1,28 @@
-function createTodo(name, due) {
+/**
+ * Example 2-10. Using a factory that adds a toJSON function
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+/**
+ * A factory function to create a user profile object,
+ * with the lastUpdated property set to today and a toJSON method.
+ *
+ * @param firstName The user's first name
+ * @param lastName The user's last name
+ */
+function createUser(firstName, lastName) {
   return {
-    name,
-    due,
-    completed: false,
+    firstName,
+    lastName,
+    lastUpdated: new Date(),
     toJSON() {
       return {
-        name: this.name,
-        completed: this.completed,
-        due: this.due.getTime()
-      };
+        firstName: this.firstName,
+        lastName: this.lastName,
+        lastUPdated: this.lastUpdated.getTime();
+      }
     }
   }
 }
 
-const todo = createTodo('Take out the trash', new Date(2025, 5, 2));
+const userProfile = createUser('Ava', 'Johnson');

@@ -1,3 +1,8 @@
+/**
+ * Example 2-13. Querying for a subset of key-value pairs
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 function getAll(keys) {
   const results = {};
 

@@ -1,3 +1,12 @@
+/**
+ * Example 2-1. Checking if local storage is available
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+/**
+ * Determines if local storage is available.
+ * @returns true if the browser can use local storage, false if not
+ */
 function isLocalStorageAvailable() {
   try {
     // Local storage is available if the property exists
