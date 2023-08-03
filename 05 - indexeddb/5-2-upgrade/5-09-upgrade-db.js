@@ -1,3 +1,8 @@
+/**
+ * Example 5-9. Upgrading a database
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 // todoList database is now at version 2
 const request = indexedDB.open('todoList', 2);
 

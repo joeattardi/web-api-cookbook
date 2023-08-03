@@ -1,4 +1,9 @@
 /**
+ * Example 5-13. Using a cursor to get a page of records
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+/**
  * Uses a cursor to fetch a single "page" of data from an IndexedDB object store.
  *
  * @param db The IndexedDB database object
@@ -7,11 +12,11 @@
  * @param length The number of items after the offset to return
  */
 function getPaginatedRecords(db, storeName, offset, length) {
-  const transaction = db.transaction([storeName], 'readonly');
-  const store = transaction.objectStore(storeName);
-  const request = store.openCursor();
+  const cursor = db
+    .transaction([storeName], 'readonly')
+    .objectStore(storeName)
+    .openCursor();
 
-  // This array contains the records collected by the cursor.
   const results = [];
 
   // This flag indicates whether or not the cursor has skipped ahead to the offset yet.
@@ -21,23 +26,18 @@ function getPaginatedRecords(db, storeName, offset, length) {
     const cursor = event.target.result;
 
     if (!skipped) {
-      // First time through the cursor, we haven't skipped ahead yet.
       // Set the flag and skip ahead by the given offset. Next time around,
       // the cursor will be in the starting position and can start collecting records.
       skipped = true;
       cursor.advance(offset);
     } else if (cursor && result.length < length) {
-      // The cursor has skipped ahead, there are records remaining, and the desired length
-      // has not yet been reached.
-
       // Collect the record the cursor is currently pointing to.
       results.push(cursor.value);
 
       // Continue on to the next record.
       cursor.continue();
     } else {
-      // There are either no records left, or the length has been reached. All records within the given
-      // range are ready.
+      // There are either no records left, or the length has been reached.
       console.log('Got records:', request.result);
     }
   });
