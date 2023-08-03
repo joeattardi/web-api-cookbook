@@ -1,3 +1,8 @@
+/**
+ * Example 4-8. Opening an SSE connection
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 const events = new EventSource('https://example.com/events');
 
 // Fired once connected

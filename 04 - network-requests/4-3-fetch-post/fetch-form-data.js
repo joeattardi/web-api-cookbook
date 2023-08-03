@@ -1,7 +1,9 @@
-const username = 'sysadmin'
-const password = 'password';
+/**
+ * Example 4-5. Sending form data in a POST request
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
 
-fetch('https://httpbin.org/post', {
+fetch('/login', {
   method: 'POST',
   body: 'username=sysadmin&password=password',
   headers: {

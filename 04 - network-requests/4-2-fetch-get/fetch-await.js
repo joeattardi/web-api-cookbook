@@ -1,9 +1,18 @@
-try {
-  // Make the request
-  const response = await fetch('https://swapi.dev/api/people/1');
-  // Parse the response body as an object
-  const person = await response.json();
-  console.log(person.name); // prints 'Luke Skywalker'
-} catch (error) {
-  console.error('Couldn\'t fetch Luke:', error.message)
+/**
+ * Example 4-3. Using Fetch with async/await
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+async function loadUsers() {
+  try {
+    const response = await fetch('/api/users');
+    return response.json();
+  } catch (error) {
+    console.error('Error loading users:', error);
+  }
+}
+
+async function printUsers() {
+  const users = await loadUsers();
+  console.log('Got users:', users);
 }

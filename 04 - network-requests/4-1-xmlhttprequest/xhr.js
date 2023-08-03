@@ -1,16 +1,21 @@
 /**
- * Loads a person from the Star Wars API, using
- * XMLHttpRequest.
+ * Example 4-1. Making a GET request with XMLHttpRequest
+ * From "Web Browser API Cookbook" by Joe Attardi
  */
-function loadPerson(personId) {
+
+/**
+ * Loads user data from the URL /api/users, then prints them
+ * to the console.
+ */
+function getUsers() {
   const request = new XMLHttpRequest();
 
   request.addEventListener('load', event => {
     // The event target is the XHR itself; it contains a 
     // responseText property that we can use to create a JavaScript object from
     // the JSON text.
-    const person = JSON.parse(event.target.responseText);
-    console.log('Got person:', person);
+    const users = JSON.parse(event.target.responseText);
+    console.log('Got users:', users);
   });
 
   // Handle any potential errors with the request.
@@ -20,7 +25,7 @@ function loadPerson(personId) {
   request.addEventListener('error', err => {
     console.log('Error!', err);
   });
-
-  request.open('GET', `https://swapi.dev/api/people/${personId}`);
+  
+  request.open('GET', '/api/users');
   request.send();
 }

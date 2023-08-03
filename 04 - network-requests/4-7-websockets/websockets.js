@@ -1,3 +1,8 @@
+/**
+ * Example 4-9. Creating a WebSocket connection
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 // Open the WebSocket connection (the URL scheme should be ws: or wss:)
 const socket = new WebSocket(url);
 
@@ -8,16 +13,6 @@ socket.addEventListener('close', onSocketClosed);
 
 function onSocketOpened() {
   console.log('Socket ready for messages');
-
-  // Messages are simple strings
-  socket.send('Hello');
-
-  // The socket needs the data as a string, so you can use
-  // JSON.stringify to serialize objects to be sent
-  socket.send(JSON.stringify({
-    username: 'sysadmin',
-    password: 'password'
-  }));
 }
 
 function handleMessage(event) {

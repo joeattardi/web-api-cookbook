@@ -1,3 +1,12 @@
+/**
+ * Example 4-7. Sending a beacon
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+const currentUser = {
+  username: 'sysadmin'
+};
+
 // Some analytics data we want to capture
 const data = {
   user: currentUser.username,
