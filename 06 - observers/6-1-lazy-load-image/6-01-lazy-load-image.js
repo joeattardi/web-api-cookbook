@@ -1,4 +1,9 @@
 /**
+ * Example 6-1. Lazily loading an image with IntersectionObserver
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+/**
  * Observes an image element for lazy loading.
  * 
  * @param img a reference to the image DOM node

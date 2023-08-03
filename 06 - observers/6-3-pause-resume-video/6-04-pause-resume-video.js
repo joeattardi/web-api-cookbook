@@ -1,3 +1,8 @@
+/**
+ * Example 6-4. Automatically pausing and resuming a video
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 const observer = new IntersectionObserver(entries => {
   if (!entries[0].isIntersecting) {
     video.pause();

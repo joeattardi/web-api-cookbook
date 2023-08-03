@@ -1,3 +1,8 @@
+/**
+ * Example 6-6. Updating an element's content when it is resized
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
 // Look up the element you want to observe.
 const container = document.querySelector('#resize-container');
 

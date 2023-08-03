@@ -1,4 +1,9 @@
 /**
+ * Example 6-5. Animating an element's height due to child element changes
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+/**
  * Watches an element for changes to its children. When the height changes
  * due to child changes, animate the change.
  * @param element The element to watch for changes.
