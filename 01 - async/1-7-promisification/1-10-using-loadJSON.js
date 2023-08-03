@@ -1,5 +1,5 @@
 /**
- * Example 1-9. Using the loadJSON helper
+ * Example 1-10. Using the loadJSON helper
  * From "Web Browser API Cookbook" by Joe Attardi
  * 
  * Demonstrates the usage of the loadJSON helper function

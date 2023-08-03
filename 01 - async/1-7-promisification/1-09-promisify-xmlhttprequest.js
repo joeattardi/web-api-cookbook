@@ -1,5 +1,5 @@
 /**
- * Example 1-8. Promisifying the XMLHttpRequest API
+ * Example 1-9. Promisifying the XMLHttpRequest API
  * From "Web Browser API Cookbook" by Joe Attardi
  * 
  * Wraps the event-based XMLHttpRequest API in a Promise.
