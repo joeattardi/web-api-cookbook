@@ -1,0 +1,8 @@
+/*
+ * Example 6-8. Styling images to fade in
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+img.animate {
+  opacity: 0;
+  transition: opacity 500ms;
+}
