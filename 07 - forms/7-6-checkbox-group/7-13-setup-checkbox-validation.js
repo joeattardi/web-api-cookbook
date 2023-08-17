@@ -1,5 +1,5 @@
 /**
- * Example 7-10. Setting up checkbox validation
+ * Example 7-13. Setting up checkbox validation
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

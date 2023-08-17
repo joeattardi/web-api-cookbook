@@ -1,5 +1,5 @@
 /**
- * Example 7-1. Adding data with the FormData API
+ * Example 7-4. Adding data with the FormData API
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

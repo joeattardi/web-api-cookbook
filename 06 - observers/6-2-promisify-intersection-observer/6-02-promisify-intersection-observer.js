@@ -4,7 +4,7 @@
  */
 
 /**
- * Returns a Promise that is resolved once the given element becomes visible.
+ * Returns a Promise that is resolved once the given element enters the viewport.
  */
 function waitForElement(element) {
   return new Promise(resolve => {

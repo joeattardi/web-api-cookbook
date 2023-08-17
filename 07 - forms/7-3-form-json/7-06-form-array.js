@@ -1,5 +1,5 @@
 /**
- * Example 7-3. Handling array form values
+ * Example 7-6. Handling array form values
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

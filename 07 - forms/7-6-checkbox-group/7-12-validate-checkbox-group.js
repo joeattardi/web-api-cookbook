@@ -1,5 +1,5 @@
 /**
- * Example 7-9. Validating a checkbox group
+ * Example 7-12. Validating a checkbox group
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

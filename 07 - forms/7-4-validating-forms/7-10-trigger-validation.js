@@ -1,5 +1,5 @@
 /**
- * Example 7-7. Triggering form validation
+ * Example 7-10. Triggering form validation
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
