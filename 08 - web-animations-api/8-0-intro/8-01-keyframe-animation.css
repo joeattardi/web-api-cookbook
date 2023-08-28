@@ -1,0 +1,18 @@
+/**
+ * Example 8-1. Using a CSS keyframe animation
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.some-element {
+  animation: fade 250ms;
+}

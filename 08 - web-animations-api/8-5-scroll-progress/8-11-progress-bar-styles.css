@@ -1,0 +1,13 @@
+/**
+ * Example 8-11. Scroll progress bar styles
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+ .scroll-progress {
+  height: 8px;
+  transform-origin: left;
+  position: sticky;
+  top: 0;
+  transform: scaleX(0);
+  background: blue;
+}
