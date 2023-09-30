@@ -1,5 +1,5 @@
 /**
- * Example 7-11. Validating the checkbox form
+ * Example 7-15. Validating the checkbox form
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

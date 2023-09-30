@@ -1,5 +1,5 @@
 /**
- * Example 7-15. Performing asynchronous password strength validation
+ * Example 7-16. Performing asynchronous password strength validation
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

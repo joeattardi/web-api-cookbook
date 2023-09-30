@@ -1,5 +1,5 @@
 /**
- * Example 7-11. Using custom validation
+ * Example 7-12. Using custom validation
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

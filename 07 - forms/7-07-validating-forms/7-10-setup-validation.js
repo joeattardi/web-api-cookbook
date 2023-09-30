@@ -1,5 +1,5 @@
 /**
- * Example 7-9. Setting up validation for a form field
+ * Example 7-10. Setting up validation for a form field
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

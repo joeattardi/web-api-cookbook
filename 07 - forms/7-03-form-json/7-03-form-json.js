@@ -1,5 +1,5 @@
 /**
- * Example 7-5. Submitting a form as JSON using Fetch
+ * Example 7-3. Submitting a form as JSON using Fetch
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

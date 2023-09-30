@@ -1,5 +1,5 @@
 /**
- * Example 7-16. The async form submit handler
+ * Example 7-17. The async form submit handler
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

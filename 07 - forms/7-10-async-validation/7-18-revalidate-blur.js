@@ -1,5 +1,5 @@
 /**
- * Example 7-17. Revalidating on blur
+ * Example 7-18. Revalidating on blur
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
