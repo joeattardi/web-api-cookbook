@@ -1,5 +1,5 @@
 /**
- * Example 8-14. Using the prefers-reduced-motion media query
+ * Example 8-18. Using the prefers-reduced-motion media query
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
