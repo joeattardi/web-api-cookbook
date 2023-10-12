@@ -3,9 +3,9 @@
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
-addValidation(form.elements.option1);
-addValidation(form.elements.option2);
-addValidation(form.elements.option3);
+addValidation(form.elements.option1, 'checkbox-error');
+addValidation(form.elements.option2, 'checkbox-error');
+addValidation(form.elements.option3, 'checkbox-error');
 
 form.addEventListener('submit', event => {
   event.preventDefault();

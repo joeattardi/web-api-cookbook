@@ -11,7 +11,7 @@ function validateCheckboxes(form) {
   // message.
   const element = form.elements.option1;
 
-  if (data.getAll('options').length === 0) {
+  if (!data.has('options')) {
     element.setCustomValidity('Please select at least one option.');
   } else {
     element.setCustomValidity('');
