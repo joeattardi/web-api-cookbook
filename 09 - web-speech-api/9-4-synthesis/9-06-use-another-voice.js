@@ -10,6 +10,11 @@ const aliceVoice = speechSynthesis
 
 function speakText(text) {
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.voice = aliceVoice;
+
+  // Make sure the "Alice" voice was found
+  if (aliceVoice) {
+    utterance.voice = aliceVoice;
+  }
+
   speechSynthesis.speak(utterance);
 }

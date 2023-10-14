@@ -6,13 +6,19 @@
 /**
  * Listens for speech and performs speech recognition.
  * Assumes that speech recognition is available in the current browser.
- * @returns a Promise that is resolved when speech is recognized, and rejects on an error
+ * @returns a Promise that is resolved with the recognized transcript when speech is recognized, and rejects on an error
  */
 function captureSpeech() {
-  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  const recognition = new SpeechRecognition();
-
   const speechPromise = new Promise((resolve, reject) => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    // If this browser doesn't support speech recognition, reject the Promise
+    if (!SpeechRecognition) {
+      reject('Speech recognition is not supported on this browser.')
+    }
+
+    const recognition = new SpeechRecognition();
+
     // Resolve the promise on successful speech recognition
     recognition.addEventListener('result', event => {
       const result = event.results[event.resultIndex];
