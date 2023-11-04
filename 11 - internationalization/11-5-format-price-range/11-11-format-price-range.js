@@ -1,5 +1,5 @@
 /**
- * Example 11-10. Formatting a price range
+ * Example 11-11. Formatting a price range
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

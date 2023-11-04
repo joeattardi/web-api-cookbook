@@ -1,5 +1,5 @@
 /**
- * Example 11-12. A full plural rules solution
+ * Example 11-14. A full plural rules solution
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

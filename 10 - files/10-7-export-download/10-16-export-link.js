@@ -1,5 +1,5 @@
 /**
- * Example 10-15. Preparing the export link
+ * Example 10-16. Preparing the export link
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

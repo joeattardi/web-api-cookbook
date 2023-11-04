@@ -1,5 +1,5 @@
 /**
- * Example 11-13. Getting the character, word, and sentence count of a string
+ * Example 11-15. Getting the character, word, and sentence count of a string
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

@@ -19,7 +19,7 @@ template.innerHTML = `
 
   <div class="feedback-prompt">
     <p>Was this helpful?</p>
-    <button data-helpful="true">Yes</button>
-    <button data-helpful="false">No</button>
+    <button type="button" data-helpful="true">Yes</button>
+    <button type="button" data-helpful="false">No</button>
   </div>
 `;

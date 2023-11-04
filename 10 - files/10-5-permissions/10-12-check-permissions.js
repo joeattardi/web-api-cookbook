@@ -1,5 +1,5 @@
 /**
- * Example 10-11. Selecting and checking permissions for a file
+ * Example 10-12. Selecting and checking permissions for a file
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

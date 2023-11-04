@@ -1,5 +1,5 @@
 /**
- * Example 11-11. Determining the plural form
+ * Example 11-13. Determining the plural form
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

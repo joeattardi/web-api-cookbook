@@ -1,5 +1,5 @@
 /**
- * Example 11-14. Formatting a list of user objects
+ * Example 11-16. Formatting a list of user objects
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

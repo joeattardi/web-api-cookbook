@@ -1,5 +1,5 @@
 /**
- * Example 11-15. Sorting an array of names with Intl.Collator
+ * Example 11-17. Sorting an array of names with Intl.Collator
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

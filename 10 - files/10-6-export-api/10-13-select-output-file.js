@@ -1,5 +1,5 @@
 /**
- * Example 10-12. Selecting an output file
+ * Example 10-13. Selecting an output file
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

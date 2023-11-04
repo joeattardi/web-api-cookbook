@@ -1,5 +1,5 @@
 /**
- * Example 10-13. Exporting data to a local file
+ * Example 10-14. Exporting data to a local file
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
