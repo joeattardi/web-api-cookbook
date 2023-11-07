@@ -1,0 +1,8 @@
+/**
+ * Example 12-21. Fixing the flicker issue
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+ x-disclosure:not(:defined) {
+  display: none;
+}
