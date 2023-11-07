@@ -1,0 +1,10 @@
+/**
+ * Example 13-19. The tooltip styles
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+ #tooltip {
+  margin: 0;
+  margin-top: 1em;
+  position: absolute;
+}

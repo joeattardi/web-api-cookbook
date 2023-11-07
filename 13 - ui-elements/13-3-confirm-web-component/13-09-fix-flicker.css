@@ -1,0 +1,8 @@
+/**
+ * Example 13-9: Fixing the flicker issue
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+confirm-dialog:not(:defined) {
+  display: none;
+}
