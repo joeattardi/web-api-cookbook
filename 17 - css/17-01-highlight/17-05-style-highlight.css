@@ -1,0 +1,8 @@
+/**
+ * Example 17-5. Styling the highlight
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+::highlight(highlight-range) {
+  background-color: #fef3c7;
+}

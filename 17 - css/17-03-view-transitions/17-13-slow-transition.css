@@ -1,0 +1,9 @@
+/**
+ * Example 17-13. Slowing down the transition
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 2s;
+}
