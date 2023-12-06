@@ -6,6 +6,7 @@
 if ('share' in navigator) {
   navigator.share({
     title: 'Web Browser API Cookbook',
+    text: 'Check out this awesome site!',
     url: 'https://browserapis.dev'
   });
 }
