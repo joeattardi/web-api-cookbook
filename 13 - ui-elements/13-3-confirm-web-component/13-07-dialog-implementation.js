@@ -1,5 +1,5 @@
 /**
- * Example 13-6. The confirmation component implementation
+ * Example 13-7. The confirmation component implementation
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

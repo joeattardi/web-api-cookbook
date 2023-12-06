@@ -1,5 +1,5 @@
 /**
- * Example 13-5. The template for the confirmation dialog component
+ * Example 13-6. The template for the confirmation dialog component
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
@@ -9,7 +9,7 @@ template.innerHTML = `
     <h2>Confirm</h2>
     <p><slot></slot></p>
 
-    <button class="confirm-button">Confirm</button>
-    <button class="cancel-button">Cancel</button>
+    <button type="button" class="confirm-button">Confirm</button>
+    <button type="button" class="cancel-button">Cancel</button>
   </dialog>
 `;

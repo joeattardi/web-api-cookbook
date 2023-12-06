@@ -1,5 +1,5 @@
 /**
- * Example 13-4. Event listeners for the confirmation dialog
+ * Example 13-5. Event listeners for the confirmation dialog
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

@@ -1,5 +1,5 @@
 /**
- * Example 13-8. Using the confirmation dialog component
+ * Example 13-9. Using the confirmation dialog component
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

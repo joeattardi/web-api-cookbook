@@ -1,5 +1,5 @@
 /**
- * Example 13-12. Toggling the visibility with JavaScript
+ * Example 13-13. Toggling the visibility with JavaScript
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

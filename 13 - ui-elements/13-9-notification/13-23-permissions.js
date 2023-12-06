@@ -1,5 +1,5 @@
 /**
- * Example 13-22. Checking notification permissions
+ * Example 13-23. Checking notification permissions
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

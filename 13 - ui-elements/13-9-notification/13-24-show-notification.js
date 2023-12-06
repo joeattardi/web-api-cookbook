@@ -1,5 +1,5 @@
 /**
- * Example 13-23. Showing a notification
+ * Example 13-24. Showing a notification
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 

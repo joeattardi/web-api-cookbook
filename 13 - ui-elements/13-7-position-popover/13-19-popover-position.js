@@ -1,5 +1,5 @@
 /**
- * Example 13-18. Setting the popover's position
+ * Example 13-19. Setting the popover's position
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
