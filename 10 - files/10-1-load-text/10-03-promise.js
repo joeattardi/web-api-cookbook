@@ -17,4 +17,10 @@ function readFileContent(file) {
   });
 }
 
-const content = await readFileContent(inputFile);
+try {
+  const content = await readFileContent(inputFile);
+  const textArea = document.querySelector('.file-content-textarea');
+  textArea.textContent = content;
+} catch (error) {
+  console.error('Error reading file content:', error);
+}

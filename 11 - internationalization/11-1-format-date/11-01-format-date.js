@@ -3,5 +3,5 @@
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
-const format = new Intl.DateTimeFormat(navigator.language, { dateStyle: 'long' });
-const formattedDate = format.format(new Date());
+const formatter = new Intl.DateTimeFormat(navigator.language, { dateStyle: 'long' });
+const formattedDate = formatter.format(new Date());

@@ -10,10 +10,12 @@ target.addEventListener('drop', event => {
   event.preventDefault();
 
   // Get the selected file data. `dataTransfer.items` is a 
-  // `DataTransferItemList`. Each item in the list has data about an item
-  // being dropped. As this example only deals with a single file, it gets
+  // `DataTransferItemList`. Each item in the list, a `DataTransferItem`, has data 
+  // about an item being dropped. As this example only deals with a single file, it gets
   // the first item in the list.
   const [item] = event.dataTransfer.items;
+
+  // Get the dropped data as a File object.
   const file = item.getAsFile();
 
   // Only proceed if an image file was dropped.

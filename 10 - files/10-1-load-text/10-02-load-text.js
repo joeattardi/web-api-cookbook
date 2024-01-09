@@ -36,6 +36,9 @@ fileInput.addEventListener('change', event => {
   const [file] = fileInput.files;
 
   readFileContent(file, content => {
-    console.log('Got file content:', content);
+    // The file's text content is now available.
+    // Imagine you have a textarea element you want to set the text in.
+    const textArea = document.querySelector('.file-content-textarea');
+    textArea.textContent = content;
   });
 });

@@ -28,7 +28,7 @@ function showImageFile(file, imageElement) {
 const fileInput = document.querySelector('#select-file');
 fileInput.addEventListener('change', event => {
   showImageFile(
-    fileInput, 
+    fileInput.files[0], 
     document.querySelector('#placeholder-image')
   );
 });
