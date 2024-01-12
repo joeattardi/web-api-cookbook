@@ -3,7 +3,7 @@
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
-#popover {
+.popover {
   margin: 0;
   margin-top: 1em;
   position: absolute;

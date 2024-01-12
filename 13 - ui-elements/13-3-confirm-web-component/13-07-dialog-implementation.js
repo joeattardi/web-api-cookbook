@@ -24,9 +24,9 @@ class ConfirmDialog extends HTMLElement {
       });
   }
 
-  showModal() {
+  showConfirmation() {
     // Pass through the call to showModal
-    this.dialog.showModal();
+    this.dialog.showConfirmation();
 
     return new Promise(resolve => {
       // Listen for the next close event and resolve the Promise.

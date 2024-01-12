@@ -4,6 +4,6 @@
  */
 
 const confirmDialog = document.querySelector('#confirm-delete');
-if (await confirmDialog.showModal()) {
+if (await confirmDialog.showConfirmation()) {
   // perform the delete operation
 }

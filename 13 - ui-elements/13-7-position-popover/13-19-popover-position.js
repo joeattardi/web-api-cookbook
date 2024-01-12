@@ -3,8 +3,8 @@
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
-const popover = document.querySelector('#popover');
-const trigger = document.querySelector('#trigger');
+const popover = document.querySelector('.popover');
+const trigger = document.querySelector('.trigger');
 
 popover.addEventListener('toggle', event => {
   // Update the position if the popover is being opened
