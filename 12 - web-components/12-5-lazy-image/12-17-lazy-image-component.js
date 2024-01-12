@@ -3,14 +3,20 @@
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
-// Extend HTMLImageElement instead of HTMLElement.
-class LazyImage extends HTMLImageElement {
+class LazyImage extends HTMLElement {
+  constructor() {
+    super();
+
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+    this.image = document.createElement('img');
+    shadowRoot.appendChild(this.image);
+  }
+
   connectedCallback() {
     const observer = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting) {
-        // lazySrc is an attribute that has the actual image URL, which will be used
-        // once the image scrolls into the viewport.
-        this.src = this.getAttribute('lazySrc');
+        console.log('Loading image');
+        this.image.src = this.getAttribute('src');
         observer.disconnect();
       }
     });
@@ -19,8 +25,4 @@ class LazyImage extends HTMLImageElement {
   }
 }
 
-// When registering the element, you must declare that it extends
-// the <img> tag.
-customElements.define('lazy-image', LazyImage, {
-  extends: 'img'
-});
+customElements.define('lazy-image', LazyImage);

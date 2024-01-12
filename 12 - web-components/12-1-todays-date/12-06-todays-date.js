@@ -1,16 +1,16 @@
 /**
- * Example 12-1. A custom element that formats the current date
+ * Example 12-6. A custom element that formats the current date
  * From "Web Browser API Cookbook" by Joe Attardi
  */
 
 class TodaysDate extends HTMLElement {
   connectedCallback() {
-    const format = new Intl.DateTimeFormat(
+    const formatter = new Intl.DateTimeFormat(
       navigator.language,
       { dateStyle: 'full' }
     );
 
-    this.textContent = format.format(new Date());
+    this.textContent = formatter.format(new Date());
   }
 }
 

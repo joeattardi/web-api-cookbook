@@ -13,7 +13,7 @@ class DateFormatter extends HTMLElement {
 
     // Create the format here so you don't have to
     // re-create it every time the date changes.
-    this.format = new Intl.DateTimeFormat(
+    this.formatter = new Intl.DateTimeFormat(
       navigator.language, 
       { dateStyle: 'full' }
     );
@@ -25,16 +25,16 @@ class DateFormatter extends HTMLElement {
    */
   formatDate() {
     if (this.hasAttribute('date')) {
-      this.textContent = this.format.format(
+      this.textContent = this.formatter.format(
         new Date(this.getAttribute('date'))
       );
     } else {
-      // Handle the case where there is no date specified
-      this.textContent = '(no date)';
+      // If no date specified, show nothing
+      this.textContent = '';
     }
   }
 
-  attributeChangedCallback(name, oldValue, newValue) {
+  attributeChangedCallback() {
     // Only watching one attribute, so this must be a change
     // to the date attribute. Update the formatted date, if any.
     this.formatDate();
