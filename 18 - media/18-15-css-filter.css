@@ -1,0 +1,8 @@
+/**
+ * Example 18-15. Applying a filter
+ * From "Web Browser API Cookbook" by Joe Attardi
+ */
+
+ #canvas {
+  filter: hue-rotate(90deg);
+}
